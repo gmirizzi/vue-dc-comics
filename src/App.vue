@@ -27,7 +27,7 @@ export default {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   display: flex;
 }

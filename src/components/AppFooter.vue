@@ -11,7 +11,7 @@
           </ul>
         </section>
       </div>
-      <!-- <img src="./../assets/img/dc-logo-bg.png" alt="logo dc" /> -->
+      <img src="./../assets/img/dc-logo-bg.png" alt="logo dc" />
     </div>
   </footer>
 </template>
@@ -151,28 +151,38 @@ export default {
 <style scoped lang="scss">
 footer {
   background-image: url("./../assets/img/footer-bg.jpg");
-  padding: 1em 0;
-}
-#links {
-  height: 420px;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1.5em;
-  section {
-    h1 {
-      color: white;
-      margin-bottom: 0.5em;
-      text-transform: uppercase;
+  .container {
+    height: 350px;
+    gap: 100px;
+    #links {
+      font-size: 14px;
+      width: 50%;
+      padding: 2.5em 0;
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      gap: 1.5em;
+      section {
+        h1 {
+          color: white;
+          margin-bottom: 0.5em;
+          text-transform: uppercase;
+        }
+        ul {
+          list-style: none;
+          li {
+            line-height: 1.5em;
+          }
+          a {
+            text-decoration: none;
+            color: #5a6161ff;
+          }
+        }
+      }
     }
-    ul {
-      list-style: none;
-      li {
-        line-height: 1.5em;
-      }
-      a {
-        text-decoration: none;
-        color: #5a6161ff;
-      }
+    img {
+      width: 50%;
+      object-fit: cover;
     }
   }
 }
