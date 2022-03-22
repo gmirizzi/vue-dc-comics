@@ -21,4 +21,13 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./assets/css/_reset.css";
+#app {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+</style>
