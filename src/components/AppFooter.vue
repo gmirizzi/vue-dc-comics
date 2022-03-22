@@ -11,7 +11,7 @@
           </ul>
         </section>
       </div>
-      <img src="./../assets/img/dc-logo-bg.png" alt="logo dc" />
+      <!-- <img src="./../assets/img/dc-logo-bg.png" alt="logo dc" /> -->
     </div>
   </footer>
 </template>
@@ -47,23 +47,11 @@ export default {
             },
             {
               href: "#",
-              text: "Collectibles",
-            },
-            {
-              href: "#",
               text: "Videos",
             },
             {
               href: "#",
-              text: "Fans",
-            },
-            {
-              href: "#",
               text: "News",
-            },
-            {
-              href: "#",
-              text: "Shop",
             },
           ],
         },
@@ -89,84 +77,68 @@ export default {
             },
             {
               href: "#",
-              text: "Comics",
+              text: "Privacy policy (New)",
             },
             {
               href: "#",
-              text: "Movies",
+              text: "Ad Choices",
             },
             {
               href: "#",
-              text: "TV",
+              text: "Advertising",
             },
             {
               href: "#",
-              text: "Games",
+              text: "Jobs",
             },
             {
               href: "#",
-              text: "Collectibles",
+              text: "Subscriptions",
             },
             {
               href: "#",
-              text: "Videos",
+              text: "Talent Workshops",
             },
             {
               href: "#",
-              text: "Fans",
+              text: "CPSC Certifications",
             },
             {
               href: "#",
-              text: "News",
+              text: "Ratings",
             },
             {
               href: "#",
-              text: "Shop",
+              text: "Shop Help",
+            },
+            {
+              href: "#",
+              text: "Contact Us",
             },
           ],
         },
         {
-          title: "DC Comics",
+          title: "Sites",
           links: [
             {
               href: "#",
-              text: "Characters",
+              text: "DC",
             },
             {
               href: "#",
-              text: "Comics",
+              text: "MAD Magazine",
             },
             {
               href: "#",
-              text: "Movies",
+              text: "DC Kids",
             },
             {
               href: "#",
-              text: "TV",
+              text: "DC Universe",
             },
             {
               href: "#",
-              text: "Games",
-            },
-            {
-              href: "#",
-              text: "Collectibles",
-            },
-            {
-              href: "#",
-              text: "Videos",
-            },
-            {
-              href: "#",
-              text: "Fans",
-            },
-            {
-              href: "#",
-              text: "News",
-            },
-            {
-              href: "#",
-              text: "Shop",
+              text: "DC Power Visa",
             },
           ],
         },
@@ -179,17 +151,29 @@ export default {
 <style scoped lang="scss">
 footer {
   background-image: url("./../assets/img/footer-bg.jpg");
+  padding: 1em 0;
 }
 #links {
-  width: 30%;
+  height: 420px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.5em;
   section {
+    h1 {
+      color: white;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+    }
     ul {
       list-style: none;
+      li {
+        line-height: 1.5em;
+      }
+      a {
+        text-decoration: none;
+        color: #5a6161ff;
+      }
     }
   }
-}
-img {
-  width: 70%;
-  padding: 0 3em;
 }
 </style>
