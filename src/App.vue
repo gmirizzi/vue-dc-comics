@@ -2,6 +2,7 @@
   <div id="app">
     <AppHeader />
     <MainContent />
+    <BlueBar />
     <AppFooter />
     <BottomBar />
   </div>
@@ -12,6 +13,7 @@ import AppHeader from "./components/AppHeader.vue";
 import MainContent from "./components/MainContent.vue";
 import AppFooter from "./components/AppFooter.vue";
 import BottomBar from "./components/BottomBar.vue";
+import BlueBar from "./components/BlueBar.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     MainContent,
     AppFooter,
     BottomBar,
+    BlueBar,
   },
 };
 </script>
