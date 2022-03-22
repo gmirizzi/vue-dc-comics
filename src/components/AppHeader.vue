@@ -67,7 +67,6 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   img {
