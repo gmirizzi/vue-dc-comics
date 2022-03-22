@@ -4,7 +4,12 @@
       <img src="./../assets/img/dc-logo.png" alt="logo dc" />
       <nav>
         <ul>
-          <li v-for="link in links" :key="link.text">
+          <li
+            v-for="(link, index) in links"
+            :key="link.text"
+            :class="{ active: index == activeIndex }"
+            @click.stop.prevent="activeIndex = index"
+          >
             <a href="link.href">{{ link.text }}</a>
           </li>
         </ul>
@@ -18,6 +23,7 @@ export default {
   name: "AppHeader",
   data() {
     return {
+      activeIndex: 1,
       links: [
         {
           href: "#",
@@ -67,6 +73,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
+  height: 100px;
   justify-content: space-between;
   align-items: center;
   img {
@@ -77,8 +84,9 @@ export default {
     list-style: none;
     li {
       display: inline-block;
-      margin: 0.5em;
+      margin: 1em;
       a {
+        line-height: calc(100px - 1em);
         font-size: 0.7rem;
         text-transform: uppercase;
         display: inline-block;
@@ -86,6 +94,12 @@ export default {
         color: unset;
       }
     }
+  }
+}
+.active {
+  color: #0282f9ff;
+  a {
+    border-bottom: 1em solid #0282f9ff;
   }
 }
 </style>
