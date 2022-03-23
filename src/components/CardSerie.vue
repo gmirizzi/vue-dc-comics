@@ -22,6 +22,8 @@ export default {
   img {
     width: 100%;
     height: 150px;
+    object-fit: cover;
+    object-position: top;
   }
   .serie {
     text-transform: uppercase;
