@@ -9,6 +9,7 @@
         :serie="item.series"
       />
     </div>
+    <button>LOAD MORE</button>
   </main>
 </template>
 
@@ -114,19 +115,30 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "./../assets/css/_variables.css";
 main {
   background-color: #1c1c1cff;
   color: white;
+  text-align: center;
+  padding-bottom: 1em;
   #jumbotron {
     height: 400px;
     background-image: url("./../assets/img/jumbotron.jpg");
     background-position-x: center;
   }
   .container {
-    padding: 2.5em 0 1em;
+    padding-top: 2.5em;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1em;
+  }
+  button {
+    border: none;
+    padding: 1em;
+    background-color: var(--blue);
+    color: white;
+    width: 200px;
+    cursor: pointer;
   }
 }
 </style>
