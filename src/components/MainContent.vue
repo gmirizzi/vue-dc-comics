@@ -1,14 +1,20 @@
 <template>
   <main>
+    <div id="jumbotron"></div>
     <div class="container">
-      <h1>-->Content goes here</h1>
+      <CardSerie />
     </div>
   </main>
 </template>
 
 <script>
+import CardSerie from "./CardSerie.vue";
+
 export default {
   name: "MainContent",
+  components: {
+    CardSerie,
+  },
 };
 </script>
 
@@ -16,6 +22,10 @@ export default {
 main {
   background-color: black;
   color: white;
-  padding: 3rem 0;
+  #jumbotron {
+    height: 400px;
+    background-image: url("./../assets/img/jumbotron.jpg");
+    background-position-x: center;
+  }
 }
 </style>
