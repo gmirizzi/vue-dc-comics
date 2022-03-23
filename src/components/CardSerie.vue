@@ -27,6 +27,7 @@ export default {
   }
   .serie {
     text-transform: uppercase;
+    text-align: left;
     margin-top: 1em;
     font-size: 0.7rem;
   }

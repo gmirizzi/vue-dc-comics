@@ -2,6 +2,7 @@
   <main>
     <div id="jumbotron"></div>
     <div class="container">
+      <div id="etichetta">CURRENT SERIES</div>
       <CardSerie
         v-for="item in series"
         :key="item.thumb"
@@ -127,17 +128,27 @@ main {
     background-position-x: center;
   }
   .container {
+    position: relative;
     padding-top: 2.5em;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1em;
   }
+  #etichetta {
+    background-color: var(--blue);
+    font-size: 1.2rem;
+    padding: 0.5em 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
   button {
     border: none;
-    padding: 1em;
     background-color: var(--blue);
+    padding: 0.7em;
     color: white;
-    width: 200px;
+    width: 150px;
     cursor: pointer;
   }
 }
